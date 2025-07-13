@@ -165,6 +165,9 @@ sudo journalctl -u my-project
 # Check Nginx error logs
 sudo tail -f /var/log/nginx/error.log
 
+# Grant execute permissions, allowing Nginx to traverse the directory path
+sudo chmod o+x /home/ubuntu /home/ubuntu/your-project
+
 # Test Nginx configuration
 sudo nginx -t
 ```
